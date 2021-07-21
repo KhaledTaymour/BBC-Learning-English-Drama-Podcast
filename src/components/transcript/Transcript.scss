@@ -1,0 +1,18 @@
+.transcript-container {
+  height: 50%;
+  flex: 1;
+  text-align: left;
+
+  .transcript-text {
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
+
+    padding: 2px;
+    height: 100%;
+  }
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}

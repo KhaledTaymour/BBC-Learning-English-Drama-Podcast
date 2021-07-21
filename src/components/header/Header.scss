@@ -1,0 +1,20 @@
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin: 20px 1px 20px 1px;
+  .header-logo-letters {
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    width: 30px;
+    height: 30px;
+    margin: 1px;
+    // flexBox
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

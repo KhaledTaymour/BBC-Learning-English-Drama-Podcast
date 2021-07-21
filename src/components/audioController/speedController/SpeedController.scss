@@ -1,0 +1,14 @@
+.speed-controller-container {
+  display: flex;
+  margin: 20px 50px 0px 50px;
+  justify-content: space-between;
+  align-items: center;
+
+  .reset-speed-btn {
+    background-color: rgb(0, 194, 0);
+    color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+  }
+}
