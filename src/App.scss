@@ -1,12 +1,15 @@
 .App {
   text-align: center;
-
-  // position: fixed;
+  // disable scroll all over the app
   overflow: hidden;
 
   display: flex;
   flex-direction: column;
   height: 100vh;
+
+  .btn {
+    cursor: pointer;
+  }
 }
 
 .App-logo {

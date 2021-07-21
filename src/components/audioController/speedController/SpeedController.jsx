@@ -3,14 +3,29 @@ import "./SpeedController.scss";
 import DecSpeedIcon from "../../../assets/icons/dec-speed.png";
 import IncSpeedIcon from "../../../assets/icons/inc-speed.png";
 
-const SpeedController = () => {
+const SpeedController = ({
+  decreaseAudioSpeed,
+  resetAudioSpeed,
+  increaseAudioSpeed,
+  speedValue,
+}) => {
   return (
     <div className="speed-controller-container">
-      <img src={DecSpeedIcon} alt="Dec. Speed"/>
-      <div className="reset-speed-btn">
-        <div className="speed-value"></div>
+      <img
+        className="btn"
+        src={DecSpeedIcon}
+        alt="Dec. Speed"
+        onClick={decreaseAudioSpeed}
+      />
+      <div className="btn reset-speed-btn" onClick={resetAudioSpeed}>
+        <div className="speed-value">{`${speedValue}x`}</div>
       </div>
-      <img src={IncSpeedIcon} alt="Inc. Speed"/>
+      <img
+        className="btn"
+        src={IncSpeedIcon}
+        alt="Inc. Speed"
+        onClick={increaseAudioSpeed}
+      />
     </div>
   );
 };
