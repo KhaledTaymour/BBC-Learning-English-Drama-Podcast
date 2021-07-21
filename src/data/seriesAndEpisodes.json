@@ -1,0 +1,12 @@
+{
+  "The Importance of Being Earnest": {
+    "episodesBaseUrl": "https://www.bbc.co.uk/learningenglish/english/features/drama/earnest-ep-{0}",
+    "episodesAudioBaseUrl": "http://downloads.bbc.co.uk/learningenglish/intermediate/unit20/b2_u20_drama_earnest_ep{0}_download.mp3",
+    "episodesCount": 10
+  },
+  "The Race": {
+    "episodesBaseUrl": "https://www.bbc.co.uk/learningenglish/english/features/drama/the-race-ep{0}",
+    "episodesAudioBaseUrl": "http://downloads.bbc.co.uk/learningenglish/features/the_race/bbc_therace_ep{0}_download.mp3",
+    "episodesCount": 10
+  }
+}

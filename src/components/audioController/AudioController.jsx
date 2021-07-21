@@ -4,9 +4,9 @@ import "./AudioController.scss";
 // components
 import SpeedController from "./speedController/SpeedController";
 
-const AudioController = () => {
+const AudioController = ({currentEpisodeAudioUrl}) => {
   const audioRef = useRef();
-  const [currentSpeedValue, setCurrentSpeedValue] = useState(1);
+  const [currentSpeedValue, setCurrentSpeedValue] = useState(1);  
 
   const decreaseAudioSpeed = () => {
     let newVal = audioRef.current.playbackRate - 0.2;
@@ -33,7 +33,12 @@ const AudioController = () => {
 
   return (
     <div className="audio-controller-container">
-      <audio id="audio" controls ref={audioRef}></audio>
+      <audio
+        id="audio"
+        src={currentEpisodeAudioUrl}
+        controls
+        ref={audioRef}
+      ></audio>
       <SpeedController
         decreaseAudioSpeed={decreaseAudioSpeed}
         resetAudioSpeed={resetAudioSpeed}

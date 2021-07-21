@@ -6,7 +6,11 @@ import PreviousIcon from "../../assets/icons/previous.png";
 // components
 import Transcript from "../transcript/Transcript";
 
-const Episode = () => {
+const Episode = ({
+  currentSeriesName,
+  currentEpisodeNumber,
+  changeCurrentEpisodeNumber,
+}) => {
   const [isDarkModeEnabled, setIsDarkModeEnabled] = useState(false);
 
   const changeTheme = (e) => {
@@ -21,14 +25,30 @@ const Episode = () => {
     }
   };
 
+  const goToPreviousEpisode = () => {
+    changeCurrentEpisodeNumber(+currentEpisodeNumber - 1);
+  };
+
+  const goToNextEpisode = () => {
+    changeCurrentEpisodeNumber(+currentEpisodeNumber + 1);
+  };
+
   return (
     <div className="episode-container">
       <div className="episode-header">
-        <div className="prev-ep-btn" title="next episode">
+        <div
+          className="btn prev-ep-btn"
+          title="next episode"
+          onClick={goToPreviousEpisode}
+        >
           <img src={PreviousIcon} alt="Prev. Ep." />
         </div>
-        <div className="ep-title">title</div>
-        <div className="prev-ep-btn" title="next episode">
+        <div className="ep-title">{`${currentSeriesName} Ep.${currentEpisodeNumber}`}</div>
+        <div
+          className="btn next-ep-btn"
+          title="next episode"
+          onClick={goToNextEpisode}
+        >
           <img src={NextIcon} alt="Next Ep." />
         </div>
       </div>
