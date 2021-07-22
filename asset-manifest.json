@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/BBC-Learning-English-Drama-Podcast/static/css/main.68087157.chunk.css",
+    "main.js": "/BBC-Learning-English-Drama-Podcast/static/js/main.6f8160dc.chunk.js",
+    "main.js.map": "/BBC-Learning-English-Drama-Podcast/static/js/main.6f8160dc.chunk.js.map",
+    "runtime-main.js": "/BBC-Learning-English-Drama-Podcast/static/js/runtime-main.90407410.js",
+    "runtime-main.js.map": "/BBC-Learning-English-Drama-Podcast/static/js/runtime-main.90407410.js.map",
+    "static/js/2.e6b774e7.chunk.js": "/BBC-Learning-English-Drama-Podcast/static/js/2.e6b774e7.chunk.js",
+    "static/js/2.e6b774e7.chunk.js.map": "/BBC-Learning-English-Drama-Podcast/static/js/2.e6b774e7.chunk.js.map",
+    "index.html": "/BBC-Learning-English-Drama-Podcast/index.html",
+    "static/css/main.68087157.chunk.css.map": "/BBC-Learning-English-Drama-Podcast/static/css/main.68087157.chunk.css.map",
+    "static/js/2.e6b774e7.chunk.js.LICENSE.txt": "/BBC-Learning-English-Drama-Podcast/static/js/2.e6b774e7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.90407410.js",
+    "static/js/2.e6b774e7.chunk.js",
+    "static/css/main.68087157.chunk.css",
+    "static/js/main.6f8160dc.chunk.js"
+  ]
+}
