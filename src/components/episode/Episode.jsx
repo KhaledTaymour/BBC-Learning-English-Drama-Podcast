@@ -61,7 +61,10 @@ const Episode = ({
           <span className="slider round"></span>
         </label>
       </div>
-      <Transcript />
+      <Transcript
+        currentSeriesName={currentSeriesName}
+        currentEpisodeNumber={currentEpisodeNumber}
+      />
     </div>
   );
 };

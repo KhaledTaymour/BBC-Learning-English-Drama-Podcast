@@ -18,17 +18,6 @@ function App() {
     data["The Race"].episodesBaseUrl.replace("{0}", 1)
   );
 
-  useEffect(() => {
-    // const fetchBbcPage = async () => {
-    //   const urlResults = await fetch(currentEpisodeUrl);
-    //   const urlData = await urlResults.text();
-    //   console.log();
-    // };
-
-    // fetchBbcPage();
-  }, []);
-
-
   const changeCurrentEpisodeNumber = (goToEpisodeNumber) => {
     if (
       goToEpisodeNumber > 0 &&
